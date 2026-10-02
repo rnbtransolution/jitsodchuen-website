@@ -28,7 +28,8 @@ section{padding:120px 0}
 /* NAV */
 .nav{color:#fff;position:fixed;inset:0 0 auto 0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:18px 40px;transition:.4s}
 .nav.solid{color:var(--ink);background:rgba(252,248,240,.95);backdrop-filter:blur(10px);padding:10px 40px;border-bottom:1px solid var(--line)}
-.brand img{height:46px;width:auto}
+.brand img{height:84px;width:auto;transition:.4s}
+.nav.solid .brand img{height:60px}
 .links{display:flex;gap:34px}
 .links a{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;position:relative;padding:4px 0}
 .links a::after{content:"";position:absolute;left:0;bottom:-2px;height:1px;width:0;background:var(--gold);transition:.3s}
@@ -141,7 +142,7 @@ dt{font-size:.74rem;letter-spacing:.28em;text-transform:uppercase;color:var(--go
 dd a{border-bottom:1px solid var(--gold)}
 .map iframe{width:100%;height:440px;border:0;border-radius:6px}
 .footer{text-align:center;padding:70px 20px;border-top:1px solid var(--line);font-size:.85rem}
-.footer img{height:56px;margin:0 auto 18px}
+.footer img{height:110px;margin:0 auto 18px}
 
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(34px);transition:opacity 1s,transform 1s}
@@ -158,6 +159,8 @@ dd a{border-bottom:1px solid var(--gold)}
   .links.open{transform:none;visibility:visible}
   .burger{display:block}
   .nav{padding:14px 20px}
+  .brand img{height:64px}
+  .nav.solid .brand img{height:48px}
   .chef-grid,.visit-grid{grid-template-columns:1fr;gap:56px}
   .chef-photo{max-width:440px;margin-left:18px}
   .philosophy{grid-template-columns:1fr;margin-top:70px}
