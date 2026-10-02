@@ -96,12 +96,14 @@ section{padding:120px 0}
 /* BAND */
 .band{position:relative;padding:0;min-height:90vh;display:flex;align-items:center}
 .band>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.band::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(252,248,240,.97) 0%,rgba(252,248,240,.88) 42%,rgba(252,248,240,0) 85%)}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,24,20,.9) 0%,rgba(14,24,20,.78) 50%,rgba(14,24,20,.25) 90%)}
 .band-copy{position:relative;z-index:1}
 .band-copy>div{max-width:600px;padding:100px 0}
-.band-copy p{color:#37453f}
+.band-copy p{color:rgba(255,255,255,.92)}
+.band-copy h2{color:#fff}
+.band-copy .eyebrow{color:#f0c97a}
 .pillars{display:flex;flex-wrap:wrap;gap:10px;margin-top:2rem}
-.pillars span{border:1px solid var(--line);padding:6px 16px;font-size:.78rem;letter-spacing:.08em}
+.pillars span{border:1px solid rgba(255,255,255,.5);color:#fff;padding:6px 16px;font-size:.78rem;letter-spacing:.08em}
 
 /* MENU */
 .menu{background:var(--bg2)}
@@ -166,7 +168,7 @@ dd a{border-bottom:1px solid var(--gold)}
   .bento-gallery img:nth-child(n){grid-column:auto;grid-row:auto}
   .bento-gallery img:nth-child(1){grid-column:span 2}
   .hero-shade{background:linear-gradient(180deg,rgba(10,20,16,.5) 0%,rgba(10,20,16,.25) 30%,rgba(10,20,16,.85) 100%)}
-  .band::after{background:rgba(252,248,240,.9)}
+  .band::after{background:rgba(14,24,20,.68)}
   .award-badge{display:none}
   .hero-copy{padding:0 24px 90px}
   .press-row{grid-template-columns:1fr}
